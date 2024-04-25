@@ -57,6 +57,12 @@ public class RespBean<T> {
         return respBean;
     }
 
+    public static <T> RespBean<T> error(Integer code, String msg) {
+        RespBean<T> respBean = new RespBean<>();
+        respBean.setCode(code);
+        respBean.setMsg(msg);
+        return respBean;
+    }
     public static <T> RespBean<T> error(Integer code, String msg, T data) {
         RespBean<T> respBean = new RespBean<>();
         respBean.setCode(code);

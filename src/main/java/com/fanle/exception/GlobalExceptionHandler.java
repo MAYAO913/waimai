@@ -1,5 +1,6 @@
 package com.fanle.exception;
 
+import cn.hutool.jwt.JWTException;
 import com.fanle.resp.RespBean;
 import jakarta.validation.ConstraintViolationException;
 import lombok.extern.slf4j.Slf4j;
@@ -35,8 +36,14 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(ConstraintViolationException.class)
     public RespBean handleConstraintViolationException(ConstraintViolationException e){
-        log.error("ConstraintViolationException: {}", e.getMessage());
+        log.error("校验异常: {}", e.getMessage());
         return RespBean.error(e.getMessage());
+    }
+
+    @ExceptionHandler(BusinessException.class)
+    public RespBean handleBusinessException(BusinessException e){
+        log.error("业务异常: {}", e.getBusinessExceptionEnum().getDesc());
+        return RespBean.error(200, e.getBusinessExceptionEnum().getDesc());
     }
 
 }

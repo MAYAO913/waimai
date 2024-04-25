@@ -2,6 +2,9 @@ package com.fanle.service;
 
 import com.fanle.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.fanle.req.user.UserLoginReq;
+import com.fanle.req.user.UserSaveReq;
+import com.fanle.resp.UserLoginResp;
 
 /**
 * @author mayao
@@ -10,4 +13,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface UserService extends IService<User> {
 
+    Integer register(UserSaveReq req);
+
+    UserLoginResp login(UserLoginReq req);
 }
