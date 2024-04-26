@@ -15,4 +15,26 @@
         id,name,address,
         phone
     </sql>
+
+    <select id="selectListByCondition" resultType="com.fanle.entity.Restaurant">
+        select <include refid="Base_Column_List"/>
+        from restaurant
+        <where>
+            <if test="req.id != null">
+                `id` = #{req.id}
+            </if>
+            <if test="req.name != null">
+                and `name` = #{req.name}
+            </if>
+            <if test="req.address != null">
+                and address = #{req.address}
+            </if>
+            <if test="req.phone != null">
+                and phone = #{req.phone}
+            </if>
+        </where>
+        <if test="start != null and pageSize != null">
+            limit #{start}, #{pageSize}
+        </if>
+    </select>
 </mapper>

@@ -10,6 +10,7 @@ public enum BusinessExceptionEnum {
     PASSWORD_ERROR("密码错误"),
     JWT_NOT_AVAILABLE("token格式不正确"),
     DISH_ALREADY_EXIST_IN_THIS_RESTAURANT("该餐厅已存在该菜品"),
+    RESTAURANT_ALREADY_EXIST("该餐厅已入驻平台"),
 
     ;
     private String desc;

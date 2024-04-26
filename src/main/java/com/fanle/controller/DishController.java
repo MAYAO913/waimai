@@ -28,22 +28,22 @@ public class DishController {
     @Autowired
     private DishService dishService;
 
-    @PostMapping("/insertDish")
+    @PostMapping("/insert")
     public RespBean insertDish(@RequestBody DishSaveReq req){
         return RespBean.ok(dishService.insertDish(req));
     }
 
-    @GetMapping("/getDishes")
+    @GetMapping("/getByCondition")
     public RespBean<List<Dish>> getDishes(@RequestBody DishQueryReq req){
         return RespBean.ok(dishService.getDishes(req));
     }
 
-    @PutMapping("/updateDishById")
+    @PutMapping("/update")
     public RespBean updateDishById(@RequestBody DishSaveReq req){
         return RespBean.ok(dishService.updateDishById(req));
     }
 
-    @DeleteMapping("/deleteDishById/{id}")
+    @DeleteMapping("/delete/{id}")
     public RespBean deleteDishById(@PathVariable("id") Integer id){
         return RespBean.ok(dishService.deleteDishById(id));
     }

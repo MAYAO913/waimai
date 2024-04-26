@@ -2,7 +2,11 @@ package com.fanle.mapper;
 
 import com.fanle.entity.Restaurant;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.fanle.req.rest.RestaurantQueryReq;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
 * @author mayao
@@ -13,6 +17,9 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface RestaurantMapper extends BaseMapper<Restaurant> {
 
+    List<Restaurant> selectListByCondition(@Param("req") RestaurantQueryReq req,
+                                           @Param("start") Integer start,
+                                           @Param("pageSize") Integer pageSize);
 }
 
 
