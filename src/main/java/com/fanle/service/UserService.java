@@ -4,7 +4,7 @@ import com.fanle.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.fanle.req.user.UserLoginReq;
 import com.fanle.req.user.UserSaveReq;
-import com.fanle.resp.UserLoginResp;
+import com.fanle.resp.user.UserLoginResp;
 
 /**
 * @author mayao

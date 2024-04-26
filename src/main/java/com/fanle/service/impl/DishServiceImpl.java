@@ -1,10 +1,20 @@
 package com.fanle.service.impl;
 
+import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.util.ObjectUtil;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.fanle.entity.Dish;
+import com.fanle.enums.BusinessExceptionEnum;
+import com.fanle.exception.BusinessException;
+import com.fanle.req.dish.DishQueryReq;
+import com.fanle.req.dish.DishSaveReq;
 import com.fanle.service.DishService;
 import com.fanle.mapper.DishMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
 * @author mayao
@@ -14,6 +24,45 @@ import org.springframework.stereotype.Service;
 @Service
 public class DishServiceImpl extends ServiceImpl<DishMapper, Dish>
     implements DishService{
+
+    @Autowired
+    private DishMapper dishMapper;
+
+    @Override
+    public List<Dish> getDishes(DishQueryReq req) {
+        Integer start = null;
+        Integer pageNum = req.getPageNum();
+        Integer pageSize = req.getPageSize();
+        if (ObjectUtil.isNotNull(pageNum) && ObjectUtil.isNotNull(pageSize)){
+            start = (pageNum - 1) * pageSize;
+        }
+        return dishMapper.selectListByCondition(req, start, pageSize);
+    }
+
+    @Override
+    public int insertDish(DishSaveReq req) {
+        // 查询该餐厅是否已经存在这个菜品
+        Dish dishDB = dishMapper.selectOne(new LambdaQueryWrapper<Dish>()
+                .eq(Dish::getRestaurantId, req.getRestaurantId())
+                .eq(Dish::getName, req.getName()));
+        if (ObjectUtil.isNotNull(dishDB)){
+            throw new BusinessException(BusinessExceptionEnum.DISH_ALREADY_EXIST_IN_THIS_RESTAURANT);
+        }
+        Dish dish = BeanUtil.copyProperties(req, Dish.class);
+        return dishMapper.insert(dish);
+    }
+
+    @Override
+    public Integer updateDishById(DishSaveReq req) {
+        Dish dish = BeanUtil.copyProperties(req, Dish.class);
+        return dishMapper.updateById(dish);
+    }
+
+    @Override
+    public Integer deleteDishById(Integer id) {
+        return dishMapper.deleteById(id);
+    }
+
 
 }
 

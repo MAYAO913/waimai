@@ -2,6 +2,10 @@ package com.fanle.service;
 
 import com.fanle.entity.Dish;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.fanle.req.dish.DishQueryReq;
+import com.fanle.req.dish.DishSaveReq;
+
+import java.util.List;
 
 /**
 * @author mayao
@@ -10,4 +14,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface DishService extends IService<Dish> {
 
+    List<Dish> getDishes(DishQueryReq req);
+
+    int insertDish(DishSaveReq req);
+
+    Integer updateDishById(DishSaveReq req);
+
+    Integer deleteDishById(Integer id);
 }

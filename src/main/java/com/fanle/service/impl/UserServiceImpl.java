@@ -10,11 +10,10 @@ import com.fanle.enums.BusinessExceptionEnum;
 import com.fanle.exception.BusinessException;
 import com.fanle.req.user.UserLoginReq;
 import com.fanle.req.user.UserSaveReq;
-import com.fanle.resp.UserLoginResp;
+import com.fanle.resp.user.UserLoginResp;
 import com.fanle.service.UserService;
 import com.fanle.mapper.UserMapper;
 import com.fanle.utils.JwtUtil;
-import jakarta.validation.constraints.NotBlank;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

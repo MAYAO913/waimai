@@ -9,12 +9,41 @@
             <result property="restaurantId" column="restaurant_id" jdbcType="INTEGER"/>
             <result property="name" column="name" jdbcType="VARCHAR"/>
             <result property="description" column="description" jdbcType="VARCHAR"/>
-            <result property="price" column="price" jdbcType="INTEGER"/>
-            <result property="avaliable" column="avaliable" jdbcType="TINYINT"/>
+            <result property="price" column="price" jdbcType="DOUBLE"/>
+            <result property="available" column="available" jdbcType="TINYINT"/>
     </resultMap>
+
 
     <sql id="Base_Column_List">
         id,restaurant_id,name,
-        description,price,avaliable
+        description,price,available
     </sql>
+    <select id="selectListByCondition" resultType="com.fanle.entity.Dish" parameterType="com.fanle.req.dish.DishQueryReq">
+        select
+        <include refid="Base_Column_List"/>
+        from dish
+        <where>
+            <if test="req.id != null">
+                id = #{req.id}
+            </if>
+            <if test="req.restaurantId != null">
+                and restaurant_id = #{req.restaurantId}
+            </if>
+            <if test="req.name != null">
+                and `name` = #{req.name}
+            </if>
+            <if test="req.description != null">
+                and description = #{req.description}
+            </if>
+            <if test="req.price != null">
+                and price = #{req.price}
+            </if>
+            <if test="req.available != null">
+                and available = #{req.available}
+            </if>
+        </where>
+        <if test="start != null and pageSize != null">
+            limit #{start}, #{pageSize}
+        </if>
+    </select>
 </mapper>

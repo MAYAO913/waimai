@@ -1,6 +1,5 @@
-package com.fanle.resp;
+package com.fanle.resp.user;
 
-import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 /**

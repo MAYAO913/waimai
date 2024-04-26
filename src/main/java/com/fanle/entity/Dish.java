@@ -38,12 +38,12 @@ public class Dish implements Serializable {
     /**
      * 单价
      */
-    private Integer price;
+    private Double price;
 
     /**
      * 是否上架
      */
-    private Integer avaliable;
+    private Boolean available;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
