@@ -11,7 +11,7 @@ public enum BusinessExceptionEnum {
     JWT_NOT_AVAILABLE("token格式不正确"),
     DISH_ALREADY_EXIST_IN_THIS_RESTAURANT("该餐厅已存在该菜品"),
     RESTAURANT_ALREADY_EXIST("该餐厅已入驻平台"),
-
+    TABLE_ALREADY_EXIST_IN_THIS_RESTAURANT("该餐厅已存在该桌号")
     ;
     private String desc;
 

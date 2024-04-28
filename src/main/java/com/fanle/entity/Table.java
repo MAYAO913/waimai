@@ -5,31 +5,20 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
-import java.util.Date;
 import lombok.Data;
 
 /**
- * ;
- * @TableName order
+ * 
+ * @TableName table
  */
-@TableName(value ="order")
+@TableName(value ="`table`")
 @Data
-public class Order implements Serializable {
+public class Table implements Serializable {
     /**
-     * 订单编号
+     * 唯一ID
      */
     @TableId(type = IdType.AUTO)
     private Integer id;
-
-    /**
-     * 用户编号
-     */
-    private Integer userId;
-
-    /**
-     * 餐厅编号
-     */
-    private Integer restaurantId;
 
     /**
      * 桌号
@@ -37,19 +26,14 @@ public class Order implements Serializable {
     private Integer tableId;
 
     /**
-     * 订单总金额
+     * 餐厅号
      */
-    private Integer totalPrice;
+    private Integer restaurantId;
 
     /**
-     * 订单状态
+     * 二维码链接
      */
-    private Integer status;
-
-    /**
-     * 下单时间
-     */
-    private Date orderTime;
+    private String qrCode;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

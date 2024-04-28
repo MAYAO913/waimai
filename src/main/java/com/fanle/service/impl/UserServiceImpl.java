@@ -62,6 +62,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         if (!DigestUtil.md5Hex(req.getPassword()).equals(userDB.getPassword())){
             throw new BusinessException(BusinessExceptionEnum.PASSWORD_ERROR);
         }
+        // TODO 区分用户身份
         // 生成token返回前端
         String token = JwtUtil.createToken(userDB.getId().longValue(), req.getUsername());
         UserLoginResp userLoginResp = BeanUtil.copyProperties(userDB, UserLoginResp.class);

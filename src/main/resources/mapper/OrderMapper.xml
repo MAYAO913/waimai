@@ -8,13 +8,14 @@
             <id property="id" column="id" jdbcType="INTEGER"/>
             <result property="userId" column="user_id" jdbcType="INTEGER"/>
             <result property="restaurantId" column="restaurant_id" jdbcType="INTEGER"/>
+            <result property="tableId" column="table_id" jdbcType="INTEGER"/>
             <result property="totalPrice" column="total_price" jdbcType="INTEGER"/>
             <result property="status" column="status" jdbcType="TINYINT"/>
             <result property="orderTime" column="order_time" jdbcType="TIMESTAMP"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,user_id,restaurant_id,
+        id,user_id,restaurant_id,table_id,
         total_price,status,order_time
     </sql>
 </mapper>

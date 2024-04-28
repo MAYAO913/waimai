@@ -55,6 +55,11 @@ public class User implements Serializable {
      */
     private String socialProvider;
 
+    /**
+     * 用户身份
+     */
+    private String role;
+
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 }

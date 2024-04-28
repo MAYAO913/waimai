@@ -30,5 +30,8 @@ public class UserSaveReq {
     @NotBlank(message = "【lastname】不能为空")
     private String lastname;
 
+    @NotBlank(message = "【role】不能为空")
+    private String role;
+
     private String socialProvider;
 }
