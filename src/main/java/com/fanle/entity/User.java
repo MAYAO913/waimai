@@ -51,11 +51,6 @@ public class User implements Serializable {
     private String lastname;
 
     /**
-     * 谷歌账号一键登录
-     */
-    private String socialProvider;
-
-    /**
      * 用户身份
      */
     private String role;

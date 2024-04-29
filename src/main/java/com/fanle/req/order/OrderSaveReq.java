@@ -1,24 +1,20 @@
-package com.fanle.entity;
+package com.fanle.req.order;
 
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import java.io.Serializable;
-import java.util.Date;
 import lombok.Data;
 
+import java.util.Date;
+
 /**
- * ;
- * @TableName order
+ * @Date: 2024/4/29 - 下午3:48
+ * @author: mafanle
  */
-@TableName(value ="`order`")
 @Data
-public class Order implements Serializable {
+public class OrderSaveReq {
     /**
      * 订单编号
      */
-    @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
@@ -60,7 +56,4 @@ public class Order implements Serializable {
      * 下单时间
      */
     private Date orderTime;
-
-    @TableField(exist = false)
-    private static final long serialVersionUID = 1L;
 }

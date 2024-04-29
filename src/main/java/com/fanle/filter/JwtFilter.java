@@ -26,6 +26,7 @@ public class JwtFilter extends OncePerRequestFilter implements Ordered {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String requestURI = request.getRequestURI();
         log.info("请求路径：{}", requestURI);
+        // 白名单
         String[] whiteList = new String[]{"/user/register", "/user/login"};
         // 验证当前请求路径是否在白名单中
         for (String path : whiteList) {

@@ -9,6 +9,7 @@
             <result property="restaurantId" column="restaurant_id" jdbcType="INTEGER"/>
             <result property="name" column="name" jdbcType="VARCHAR"/>
             <result property="description" column="description" jdbcType="VARCHAR"/>
+            <result property="picture" column="picture" jdbcType="LONGVARCHAR"/>
             <result property="price" column="price" jdbcType="DOUBLE"/>
             <result property="available" column="available" jdbcType="TINYINT"/>
     </resultMap>
@@ -16,7 +17,7 @@
 
     <sql id="Base_Column_List">
         id,restaurant_id,name,
-        description,price,available
+        description,picture,price,available
     </sql>
     <select id="selectListByCondition" resultType="com.fanle.entity.Dish" parameterType="com.fanle.req.dish.DishQueryReq">
         select
@@ -34,6 +35,9 @@
             </if>
             <if test="req.description != null">
                 and description = #{req.description}
+            </if>
+            <if test="req.picture != null">
+                and picture = #{req.picture}
             </if>
             <if test="req.price != null">
                 and price = #{req.price}
