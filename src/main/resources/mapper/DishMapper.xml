@@ -32,13 +32,13 @@
                 and restaurant_id = #{req.restaurantId}
             </if>
             <if test="req.name != null">
-                and `name` = #{req.name}
+                and `name` like concat('%',#{req.name}, '%')
             </if>
             <if test="req.description != null">
-                and description = #{req.description}
+                and description like concat('%',#{req.description}, '%')
             </if>
             <if test="req.category != null">
-                and category = #{req.category}
+                and category like concat('%',#{req.category}, '%')
             </if>
             <if test="req.img != null">
                 and img = #{req.img}
@@ -64,13 +64,13 @@
                 and restaurant_id = #{restaurantId}
             </if>
             <if test="name != null">
-                and `name` = #{name}
+                and `name` like concat('%',#{name}, '%')
             </if>
             <if test="description != null">
-                and description = #{description}
+                and description like concat('%',#{description}, '%')
             </if>
             <if test="category != null">
-                and category = #{category}
+                and category like concat('%',#{category}, '%')
             </if>
             <if test="img != null">
                 and img = #{img}

@@ -24,13 +24,13 @@
                 `id` = #{req.id}
             </if>
             <if test="req.name != null">
-                and `name` = #{req.name}
+                and `name` like concat('%',#{req.name}, '%')
             </if>
             <if test="req.address != null">
-                and address = #{req.address}
+                and address like concat('%',#{req.address}, '%')
             </if>
             <if test="req.phone != null">
-                and phone = #{req.phone}
+                and phone like concat('%',#{req.phone}, '%')
             </if>
         </where>
         <if test="start != null and pageSize != null">
@@ -45,13 +45,13 @@
                 `id` = #{id}
             </if>
             <if test="name != null">
-                and `name` = #{name}
+                and `name` like concat('%',#{name}, '%')
             </if>
             <if test="address != null">
-                and address = #{address}
+                and address like concat('%',#{address}, '%')
             </if>
             <if test="phone != null">
-                and phone = #{phone}
+                and phone like concat('%',#{phone}, '%')
             </if>
         </where>
     </select>
