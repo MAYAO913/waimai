@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.Enumeration;
 
 /**
  * @Date: 2024/4/25 - 下午3:52
@@ -26,6 +27,12 @@ public class JwtFilter extends OncePerRequestFilter implements Ordered {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String requestURI = request.getRequestURI();
         log.info("请求路径：{}", requestURI);
+
+        // 对于跨域请求，每次跨域前都会发送OPTIONS请求，需要直接放行否则获取不到请求头中的Authorization属性，会报跨域错误
+        if ("OPTIONS".equals(request.getMethod())) {
+            filterChain.doFilter(request, response);
+            return;
+        }
         // 白名单
         String[] whiteList = new String[]{"/user/register", "/user/login"};
         // 验证当前请求路径是否在白名单中
@@ -38,7 +45,7 @@ public class JwtFilter extends OncePerRequestFilter implements Ordered {
             }
         }
         // 需要进一步验证
-        String token = request.getHeader("token");
+        String token = request.getHeader("Authorization");
         if (StrUtil.isEmpty(token)) {
             log.error("请求被拦截，token为空");
             response.setStatus(HttpStatus.UNAUTHORIZED.value());
