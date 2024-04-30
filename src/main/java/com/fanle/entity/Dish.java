@@ -36,9 +36,14 @@ public class Dish implements Serializable {
     private String description;
 
     /**
+     * 菜品类别
+     */
+    private String category;
+
+    /**
      * 菜品图片
      */
-    private String picture;
+    private String img;
 
     /**
      * 单价

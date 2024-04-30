@@ -4,6 +4,7 @@ import com.fanle.entity.Restaurant;
 import com.fanle.req.rest.RestaurantQueryReq;
 import com.fanle.req.rest.RestaurantSaveReq;
 import com.fanle.resp.RespBean;
+import com.fanle.resp.rest.RestaurantQueryResp;
 import com.fanle.service.RestaurantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -28,8 +30,8 @@ public class RestaurantController {
     @Autowired
     private RestaurantService restaurantService;
 
-    @GetMapping("/getByCondition")
-    public RespBean<List<Restaurant>> getRestaurants(@RequestBody RestaurantQueryReq req){
+    @PostMapping("/getByCondition")
+    public RespBean<RestaurantQueryResp> getRestaurants(@RequestBody RestaurantQueryReq req){
         return RespBean.ok(restaurantService.getRestaurants(req));
     }
 

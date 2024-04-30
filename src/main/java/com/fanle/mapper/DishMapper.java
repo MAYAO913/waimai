@@ -20,6 +20,8 @@ public interface DishMapper extends BaseMapper<Dish> {
     List<Dish> selectListByCondition(@Param("req") DishQueryReq req,
                                      @Param("start") Integer start,
                                      @Param("pageSize") Integer pageSize);
+
+    int selectCountByCondition(DishQueryReq req);
 }
 
 

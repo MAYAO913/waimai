@@ -11,6 +11,7 @@ import com.fanle.enums.BusinessExceptionEnum;
 import com.fanle.exception.BusinessException;
 import com.fanle.req.table.TableQueryReq;
 import com.fanle.req.table.TableSaveReq;
+import com.fanle.resp.table.TableQueryResp;
 import com.fanle.service.TableService;
 import com.fanle.mapper.TableMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,14 +32,21 @@ public class TableServiceImpl extends ServiceImpl<TableMapper, Table>
     private TableMapper tableMapper;
 
     @Override
-    public List<Table> getTables(TableQueryReq req) {
+    public TableQueryResp getTables(TableQueryReq req) {
         Integer start = null;
         Integer pageNum = req.getPageNum();
         Integer pageSize = req.getPageSize();
         if (ObjectUtil.isNotNull(pageNum) && ObjectUtil.isNotNull(pageSize)){
             start = (pageNum - 1) * pageSize;
         }
-        return tableMapper.selectListByCondition(req, start, pageSize);
+        List<Table> tables = tableMapper.selectListByCondition(req, start, pageSize);
+        int total = tableMapper.selectCountByCondition(req);
+        TableQueryResp resp = new TableQueryResp();
+        resp.setTables(tables);
+        resp.setPageNum(pageNum);
+        resp.setPageSize(pageSize);
+        resp.setTotal(total);
+        return resp;
     }
 
     @Override

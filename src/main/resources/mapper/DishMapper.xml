@@ -9,7 +9,8 @@
             <result property="restaurantId" column="restaurant_id" jdbcType="INTEGER"/>
             <result property="name" column="name" jdbcType="VARCHAR"/>
             <result property="description" column="description" jdbcType="VARCHAR"/>
-            <result property="picture" column="picture" jdbcType="LONGVARCHAR"/>
+            <result property="category" column="category" jdbcType="VARCHAR"/>
+            <result property="img" column="img" jdbcType="LONGVARCHAR"/>
             <result property="price" column="price" jdbcType="DOUBLE"/>
             <result property="available" column="available" jdbcType="TINYINT"/>
     </resultMap>
@@ -17,7 +18,7 @@
 
     <sql id="Base_Column_List">
         id,restaurant_id,name,
-        description,picture,price,available
+        description,category,img,price,available
     </sql>
     <select id="selectListByCondition" resultType="com.fanle.entity.Dish" parameterType="com.fanle.req.dish.DishQueryReq">
         select
@@ -36,8 +37,11 @@
             <if test="req.description != null">
                 and description = #{req.description}
             </if>
-            <if test="req.picture != null">
-                and picture = #{req.picture}
+            <if test="req.category != null">
+                and category = #{req.category}
+            </if>
+            <if test="req.img != null">
+                and img = #{req.img}
             </if>
             <if test="req.price != null">
                 and price = #{req.price}
@@ -49,5 +53,34 @@
         <if test="start != null and pageSize != null">
             limit #{start}, #{pageSize}
         </if>
+    </select>
+    <select id="selectCountByCondition" resultType="java.lang.Integer" parameterType="com.fanle.req.dish.DishQueryReq">
+        select count(*) from dish
+        <where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+            <if test="restaurantId != null">
+                and restaurant_id = #{restaurantId}
+            </if>
+            <if test="name != null">
+                and `name` = #{name}
+            </if>
+            <if test="description != null">
+                and description = #{description}
+            </if>
+            <if test="category != null">
+                and category = #{category}
+            </if>
+            <if test="img != null">
+                and img = #{img}
+            </if>
+            <if test="price != null">
+                and price = #{price}
+            </if>
+            <if test="available != null">
+                and available = #{available}
+            </if>
+        </where>
     </select>
 </mapper>

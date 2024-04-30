@@ -4,6 +4,7 @@ import com.fanle.entity.Dish;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.fanle.req.dish.DishQueryReq;
 import com.fanle.req.dish.DishSaveReq;
+import com.fanle.resp.dish.DishQueryResp;
 
 import java.util.List;
 
@@ -14,7 +15,7 @@ import java.util.List;
 */
 public interface DishService extends IService<Dish> {
 
-    List<Dish> getDishes(DishQueryReq req);
+    DishQueryResp getDishes(DishQueryReq req);
 
     int insertDish(DishSaveReq req);
 

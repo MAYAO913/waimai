@@ -250,3 +250,621 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2024-04-29 16:24:14.237 INFO  com.fanle.WaimaiApplicationTests                  :50   [32m                  [0;39m Starting WaimaiApplicationTests using Java 21 with PID 65206 (started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
 2024-04-29 16:24:14.237 INFO  com.fanle.WaimaiApplicationTests                  :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
 2024-04-29 16:24:15.147 INFO  com.fanle.WaimaiApplicationTests                  :56   [32m                  [0;39m Started WaimaiApplicationTests in 1.105 seconds (process running for 1.51)
+2024-04-30 15:03:54.221 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
+2024-04-30 15:03:54.244 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24367 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:03:54.245 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:03:54.271 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-30 15:03:54.271 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-30 15:03:54.876 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:03:54.881 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:03:54.882 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:03:54.882 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:03:54.902 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:03:54.902 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 630 ms
+2024-04-30 15:03:55.389 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:03:55.404 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:03:55.414 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:03:55.420 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 1.438 seconds (process running for 1.852)
+2024-04-30 15:04:00.549 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 15:04:00.549 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-30 15:04:00.550 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2024-04-30 15:04:00.553 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/restaurant/getByCondition
+2024-04-30 15:04:00.586 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:04:00.586 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:04:00.652 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-04-30 15:04:00.845 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48cfcd0e
+2024-04-30 15:04:00.846 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-04-30 15:10:21.680 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 5 class path changes (0 additions, 4 deletions, 1 modification)
+2024-04-30 15:10:21.686 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:10:32.714 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2024-04-30 15:10:32.730 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2024-04-30 15:10:34.070 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
+2024-04-30 15:10:34.083 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:10:34.083 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:10:34.102 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-30 15:10:34.102 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-30 15:10:34.606 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:10:34.610 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:10:34.611 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:10:34.611 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:10:34.628 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:10:34.628 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 526 ms
+2024-04-30 15:10:35.062 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:10:35.076 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:10:35.085 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:10:35.090 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 1.247 seconds (process running for 1.68)
+2024-04-30 15:10:39.360 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 15:10:39.360 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-30 15:10:39.362 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2024-04-30 15:10:39.365 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/restaurant/getByCondition
+2024-04-30 15:10:39.403 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:10:39.403 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:10:52.478 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-04-30 15:10:54.402 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49a5f7ca
+2024-04-30 15:10:54.408 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-04-30 15:11:07.633 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'req' in 'class com.fanle.req.rest.RestaurantQueryReq'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:387)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:159)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:116)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextMap.get(DynamicContext.java:102)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:112)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:3344)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:121)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTChain.getValueBody(ASTChain.java:141)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:586)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:550)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:58)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:320)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:88)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy78.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:89)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:152)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy3/jdk.proxy3.$Proxy82.selectCountByCondition(Unknown Source)
+	at com.fanle.service.impl.RestaurantServiceImpl.getRestaurants(RestaurantServiceImpl.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:713)
+	at com.fanle.service.impl.RestaurantServiceImpl$$SpringCGLIB$$0.getRestaurants(<generated>)
+	at com.fanle.controller.RestaurantController.getRestaurants(RestaurantController.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at com.fanle.filter.JwtFilter.doFilterInternal(JwtFilter.java:59)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-04-30 15:15:08.669 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-30 15:15:08.681 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:15:15.436 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2024-04-30 15:15:15.460 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2024-04-30 15:15:15.526 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:15:15.526 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:15:15.662 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:15:15.663 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:15:15.663 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:15:15.663 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:15:15.667 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:15:15.667 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 139 ms
+2024-04-30 15:15:15.833 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:15:15.841 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:15:15.842 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:15:15.844 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.338 seconds (process running for 282.44)
+2024-04-30 15:15:15.845 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:15:17.030 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 15:15:17.031 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-30 15:15:17.033 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2024-04-30 15:15:17.033 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/restaurant/getByCondition
+2024-04-30 15:15:17.036 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:15:17.037 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:15:19.006 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2024-04-30 15:15:19.038 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ce74cad
+2024-04-30 15:15:19.038 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2024-04-30 15:15:19.043 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'req' in 'class com.fanle.req.rest.RestaurantQueryReq'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:387)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:159)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:116)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextMap.get(DynamicContext.java:102)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:112)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:3344)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:121)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTChain.getValueBody(ASTChain.java:141)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:586)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:550)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:58)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:320)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:88)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy78.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:89)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:152)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy5/jdk.proxy5.$Proxy100.selectCountByCondition(Unknown Source)
+	at com.fanle.service.impl.RestaurantServiceImpl.getRestaurants(RestaurantServiceImpl.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:713)
+	at com.fanle.service.impl.RestaurantServiceImpl$$SpringCGLIB$$0.getRestaurants(<generated>)
+	at com.fanle.controller.RestaurantController.getRestaurants(RestaurantController.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at com.fanle.filter.JwtFilter.doFilterInternal(JwtFilter.java:59)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-04-30 15:15:47.072 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-30 15:15:47.087 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:15:54.970 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2024-04-30 15:15:55.006 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2024-04-30 15:15:55.091 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:15:55.091 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:15:55.205 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:15:55.205 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:15:55.205 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:15:55.205 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:15:55.209 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:15:55.209 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 116 ms
+2024-04-30 15:15:55.354 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:15:55.362 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:15:55.363 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:15:55.364 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.291 seconds (process running for 321.961)
+2024-04-30 15:15:55.365 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:15:56.168 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 15:15:56.168 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-30 15:15:56.170 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 2 ms
+2024-04-30 15:15:56.171 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/restaurant/getByCondition
+2024-04-30 15:15:56.174 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:15:56.174 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:15:57.869 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2024-04-30 15:15:57.892 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4790012b
+2024-04-30 15:15:57.892 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2024-04-30 15:16:52.343 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/restaurant/getByCondition
+2024-04-30 15:16:52.344 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:16:52.345 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:18:56.072 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-30 15:18:56.075 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:19:07.083 WARN  org.apache.tomcat.util.net.Acceptor               :173  [32m                  [0;39m The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+2024-04-30 15:19:07.088 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2024-04-30 15:19:07.102 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2024-04-30 15:19:07.175 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:19:07.175 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:19:07.274 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:19:07.274 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:19:07.274 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:19:07.274 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:19:07.278 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:19:07.278 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 102 ms
+2024-04-30 15:19:07.413 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:19:07.421 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:19:07.422 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:19:07.424 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.265 seconds (process running for 514.025)
+2024-04-30 15:19:07.424 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:21:41.811 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 6 class path changes (2 additions, 0 deletions, 4 modifications)
+2024-04-30 15:21:41.813 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:21:52.820 WARN  org.apache.tomcat.util.net.Acceptor               :173  [32m                  [0;39m The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+2024-04-30 15:21:52.905 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:21:52.906 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:21:53.007 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:21:53.007 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:21:53.007 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:21:53.007 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:21:53.010 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:21:53.011 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 104 ms
+2024-04-30 15:21:53.143 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:21:53.150 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:21:53.151 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:21:53.153 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.265 seconds (process running for 679.757)
+2024-04-30 15:21:53.153 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:21:56.168 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 15:21:56.168 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-30 15:21:56.170 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2024-04-30 15:21:56.171 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/table/getByCondition
+2024-04-30 15:21:56.173 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:21:56.173 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:21:56.179 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :227  [32m                  [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-04-30 15:22:07.694 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-30 15:22:07.695 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:22:09.539 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:22:09.540 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:22:09.643 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:22:09.644 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:22:09.644 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:22:09.644 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:22:09.647 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:22:09.647 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 106 ms
+2024-04-30 15:22:09.776 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:22:09.783 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:22:09.784 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:22:09.786 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.26 seconds (process running for 696.391)
+2024-04-30 15:22:09.786 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:22:10.684 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 15:22:10.684 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-30 15:22:10.686 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 2 ms
+2024-04-30 15:22:10.686 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/table/getByCondition
+2024-04-30 15:22:10.689 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:22:10.689 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:22:10.698 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
+2024-04-30 15:22:10.727 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f817caf
+2024-04-30 15:22:10.727 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
+2024-04-30 15:23:46.162 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-30 15:23:46.164 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:23:57.172 WARN  org.apache.tomcat.util.net.Acceptor               :173  [32m                  [0;39m The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+2024-04-30 15:23:57.179 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
+2024-04-30 15:23:57.211 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
+2024-04-30 15:23:57.288 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:23:57.289 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:23:57.390 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:23:57.390 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:23:57.390 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:23:57.390 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:23:57.393 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:23:57.393 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 103 ms
+2024-04-30 15:23:57.517 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:23:57.525 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:23:57.525 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:23:57.527 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.255 seconds (process running for 804.134)
+2024-04-30 15:23:57.528 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:23:58.940 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-30 15:23:58.943 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:24:09.953 WARN  org.apache.tomcat.util.net.Acceptor               :173  [32m                  [0;39m The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+2024-04-30 15:24:10.026 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:24:10.026 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:24:10.116 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:24:10.116 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:24:10.116 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:24:10.116 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:24:10.119 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:24:10.119 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 92 ms
+2024-04-30 15:24:10.238 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:24:10.246 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:24:10.247 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:24:10.248 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.239 seconds (process running for 816.855)
+2024-04-30 15:24:10.249 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:25:27.378 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 5 class path changes (1 addition, 1 deletion, 3 modifications)
+2024-04-30 15:25:27.393 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:25:38.401 WARN  org.apache.tomcat.util.net.Acceptor               :173  [32m                  [0;39m The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+2024-04-30 15:25:38.512 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:25:38.513 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:25:38.624 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:25:38.624 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:25:38.624 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:25:38.624 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:25:38.627 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:25:38.627 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 113 ms
+2024-04-30 15:25:38.757 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:25:38.766 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:25:38.767 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:25:38.769 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.278 seconds (process running for 905.378)
+2024-04-30 15:25:38.769 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:25:49.265 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-04-30 15:25:49.266 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:26:00.271 WARN  org.apache.tomcat.util.net.Acceptor               :173  [32m                  [0;39m The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+2024-04-30 15:26:00.353 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:26:00.353 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:26:00.443 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:26:00.443 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:26:00.443 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:26:00.443 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:26:00.446 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:26:00.446 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 92 ms
+2024-04-30 15:26:00.566 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:26:00.573 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:26:00.574 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:26:00.576 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.238 seconds (process running for 927.185)
+2024-04-30 15:26:00.576 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:26:01.991 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-04-30 15:26:01.993 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:26:13.003 WARN  org.apache.tomcat.util.net.Acceptor               :173  [32m                  [0;39m The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+2024-04-30 15:26:13.078 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:26:13.079 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:26:13.171 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:26:13.171 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:26:13.171 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:26:13.171 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:26:13.174 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:26:13.174 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 94 ms
+2024-04-30 15:26:13.288 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:26:13.295 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:26:13.298 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:26:13.300 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.237 seconds (process running for 939.91)
+2024-04-30 15:26:13.301 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:29:02.049 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-30 15:29:02.051 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:29:13.056 WARN  org.apache.tomcat.util.net.Acceptor               :173  [32m                  [0;39m The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+2024-04-30 15:29:13.125 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:29:13.125 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:29:13.219 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:29:13.219 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:29:13.219 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:29:13.219 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:29:13.222 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:29:13.222 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 96 ms
+2024-04-30 15:29:13.353 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:29:13.360 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:29:13.364 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:29:13.365 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.254 seconds (process running for 1119.995)
+2024-04-30 15:29:13.366 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:31:59.891 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2024-04-30 15:31:59.894 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:32:08.269 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:32:08.269 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:32:08.376 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:32:08.377 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:32:08.377 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:32:08.377 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:32:08.380 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:32:08.380 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 110 ms
+2024-04-30 15:32:08.504 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:32:08.513 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:32:08.516 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:32:08.518 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.262 seconds (process running for 1295.151)
+2024-04-30 15:32:08.518 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:32:09.372 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 15:32:09.373 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-30 15:32:09.375 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 2 ms
+2024-04-30 15:32:09.375 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/dish/getByCondition
+2024-04-30 15:32:09.378 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：false
+2024-04-30 15:32:09.378 ERROR com.fanle.filter.JwtFilter                        :61   [32m                  [0;39m token无效
+2024-04-30 15:32:13.819 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/user/login
+2024-04-30 15:32:13.820 INFO  com.fanle.filter.JwtFilter                        :42   [32m                  [0;39m 当前请求路径不需要验证：/user/login
+2024-04-30 15:32:13.852 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-5 - Starting...
+2024-04-30 15:32:13.883 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c75acd2
+2024-04-30 15:32:13.883 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-5 - Start completed.
+2024-04-30 15:32:13.911 INFO  com.fanle.utils.JwtUtil                           :36   [32m                  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MTQ0NjIzMzMsImlkIjoyLCJleHAiOjE3MTQ0Njk1MzMsImlhdCI6MTcxNDQ2MjMzMywidXNlcm5hbWUiOiJtYXlhbzExMSJ9.3shT0R8FI2q0TSjxha1Bdt6fJJE0YlktBPlxGQKFUyg
+2024-04-30 15:32:46.655 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/dish/getByCondition
+2024-04-30 15:32:46.657 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:32:46.657 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:32:46.659 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :227  [32m                  [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-04-30 15:32:50.380 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/dish/getByCondition
+2024-04-30 15:32:50.380 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:32:50.381 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:32:50.395 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause
+org.apache.ibatis.ognl.NoSuchPropertyException: com.fanle.req.dish.DishQueryReq.picture
+2024-04-30 15:32:57.885 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/dish/getByCondition
+2024-04-30 15:32:57.887 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:32:57.887 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:32:57.893 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause
+org.apache.ibatis.ognl.NoSuchPropertyException: com.fanle.req.dish.DishQueryReq.picture
+2024-04-30 15:34:30.366 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-30 15:34:30.370 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:34:31.839 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-5 - Shutdown initiated...
+2024-04-30 15:34:31.872 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-5 - Shutdown completed.
+2024-04-30 15:34:31.997 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 24638 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:34:31.997 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:34:32.130 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:34:32.130 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:34:32.130 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:34:32.130 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:34:32.133 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:34:32.133 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 135 ms
+2024-04-30 15:34:32.275 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:34:32.283 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:34:32.284 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:34:32.286 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.306 seconds (process running for 1438.923)
+2024-04-30 15:34:32.286 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:34:33.146 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 15:34:33.146 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-30 15:34:33.148 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 2 ms
+2024-04-30 15:34:33.148 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/dish/getByCondition
+2024-04-30 15:34:33.150 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:34:33.150 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:34:33.161 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause
+org.apache.ibatis.ognl.NoSuchPropertyException: com.fanle.req.dish.DishQueryReq.category
+2024-04-30 15:34:35.687 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/dish/getByCondition
+2024-04-30 15:34:35.688 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:34:35.688 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:34:35.691 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause
+org.apache.ibatis.ognl.NoSuchPropertyException: com.fanle.req.dish.DishQueryReq.category
+2024-04-30 15:35:23.896 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
+2024-04-30 15:35:23.910 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 25790 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:35:23.911 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:35:23.935 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-30 15:35:23.936 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-30 15:35:24.473 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:35:24.477 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:35:24.478 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:35:24.478 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:35:24.495 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:35:24.495 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 559 ms
+2024-04-30 15:35:24.929 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:35:24.943 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:35:24.952 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:35:24.958 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 1.303 seconds (process running for 1.734)
+2024-04-30 15:35:28.536 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 15:35:28.537 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-30 15:35:28.538 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2024-04-30 15:35:28.541 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/dish/getByCondition
+2024-04-30 15:35:28.569 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:35:28.570 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:35:28.626 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause
+org.apache.ibatis.ognl.NoSuchPropertyException: com.fanle.req.dish.DishQueryReq.category
+2024-04-30 15:37:26.966 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-30 15:37:26.974 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:37:29.236 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 25790 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:37:29.236 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:37:29.391 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:37:29.391 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:37:29.391 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:37:29.391 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:37:29.395 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:37:29.395 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 155 ms
+2024-04-30 15:37:29.546 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:37:29.554 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:37:29.555 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:37:29.557 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.357 seconds (process running for 126.337)
+2024-04-30 15:37:29.558 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-04-30 15:37:30.156 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 15:37:30.157 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-04-30 15:37:30.158 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2024-04-30 15:37:30.159 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/dish/getByCondition
+2024-04-30 15:37:30.162 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-04-30 15:37:30.162 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-04-30 15:37:30.181 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-04-30 15:37:30.355 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@551ca9c6
+2024-04-30 15:37:30.356 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-04-30 15:37:46.140 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-30 15:37:46.146 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:37:57.159 WARN  org.apache.tomcat.util.net.Acceptor               :173  [32m                  [0;39m The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+2024-04-30 15:37:57.167 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2024-04-30 15:37:57.183 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2024-04-30 15:37:57.261 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 25790 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-04-30 15:37:57.261 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-04-30 15:37:57.386 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-04-30 15:37:57.386 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:37:57.387 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-04-30 15:37:57.387 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-30 15:37:57.391 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-04-30 15:37:57.391 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 129 ms
+2024-04-30 15:37:57.540 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-04-30 15:37:57.548 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-04-30 15:37:57.549 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-04-30 15:37:57.551 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 0.305 seconds (process running for 154.331)
+2024-04-30 15:37:57.551 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged

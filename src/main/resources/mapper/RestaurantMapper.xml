@@ -37,4 +37,22 @@
             limit #{start}, #{pageSize}
         </if>
     </select>
+
+    <select id="selectCountByCondition" resultType="java.lang.Integer" parameterType="com.fanle.req.rest.RestaurantQueryReq">
+        select count(*) from restaurant
+        <where>
+            <if test="id != null">
+                `id` = #{id}
+            </if>
+            <if test="name != null">
+                and `name` = #{name}
+            </if>
+            <if test="address != null">
+                and address = #{address}
+            </if>
+            <if test="phone != null">
+                and phone = #{phone}
+            </if>
+        </where>
+    </select>
 </mapper>

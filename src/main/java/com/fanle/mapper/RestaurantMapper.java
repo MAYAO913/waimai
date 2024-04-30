@@ -20,6 +20,8 @@ public interface RestaurantMapper extends BaseMapper<Restaurant> {
     List<Restaurant> selectListByCondition(@Param("req") RestaurantQueryReq req,
                                            @Param("start") Integer start,
                                            @Param("pageSize") Integer pageSize);
+
+    int selectCountByCondition(RestaurantQueryReq req);
 }
 
 

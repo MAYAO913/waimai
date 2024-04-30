@@ -4,6 +4,7 @@ import com.fanle.entity.Dish;
 import com.fanle.req.dish.DishQueryReq;
 import com.fanle.req.dish.DishSaveReq;
 import com.fanle.resp.RespBean;
+import com.fanle.resp.dish.DishQueryResp;
 import com.fanle.service.DishService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -33,8 +34,8 @@ public class DishController {
         return RespBean.ok(dishService.insertDish(req));
     }
 
-    @GetMapping("/getByCondition")
-    public RespBean<List<Dish>> getDishes(@RequestBody DishQueryReq req){
+    @PostMapping("/getByCondition")
+    public RespBean<DishQueryResp> getDishes(@RequestBody DishQueryReq req){
         return RespBean.ok(dishService.getDishes(req));
     }
 

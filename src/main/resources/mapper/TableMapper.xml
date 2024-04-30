@@ -37,4 +37,22 @@
             limit #{start}, #{pageSize}
         </if>
     </select>
+    <select id="selectCountByCondition" resultType="java.lang.Integer" parameterType="com.fanle.req.table.TableQueryReq">
+        select count(*) from `table`
+        <where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+            <if test="tableId != null">
+                and table_id = #{tableId}
+            </if>
+            <if test="restaurantId != null">
+                and restaurant_id = #{restaurantId}
+            </if>
+            <if test="qrCode != null">
+                and qr_code = #{qrCode}
+            </if>
+        </where>
+
+    </select>
 </mapper>

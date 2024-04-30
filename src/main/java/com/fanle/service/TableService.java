@@ -4,6 +4,7 @@ import com.fanle.entity.Table;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.fanle.req.table.TableQueryReq;
 import com.fanle.req.table.TableSaveReq;
+import com.fanle.resp.table.TableQueryResp;
 
 import java.util.List;
 
@@ -14,7 +15,7 @@ import java.util.List;
 */
 public interface TableService extends IService<Table> {
 
-    List<Table> getTables(TableQueryReq req);
+    TableQueryResp getTables(TableQueryReq req);
 
     Integer insertTable(TableSaveReq req);
 

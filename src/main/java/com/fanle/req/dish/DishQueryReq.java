@@ -21,6 +21,10 @@ public class DishQueryReq extends PageReq {
 
     private String description;
 
+    private String category;
+
+    private String img;
+
     private Double price;
 
     private Boolean available;

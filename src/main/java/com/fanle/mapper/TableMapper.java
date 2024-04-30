@@ -20,6 +20,8 @@ public interface TableMapper extends BaseMapper<Table> {
     List<Table> selectListByCondition(@Param("req") TableQueryReq req,
                                       @Param("start") Integer start,
                                       @Param("pageSize") Integer pageSize);
+
+    int selectCountByCondition(TableQueryReq req);
 }
 
 

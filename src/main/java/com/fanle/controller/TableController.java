@@ -4,6 +4,7 @@ import com.fanle.entity.Table;
 import com.fanle.req.table.TableQueryReq;
 import com.fanle.req.table.TableSaveReq;
 import com.fanle.resp.RespBean;
+import com.fanle.resp.table.TableQueryResp;
 import com.fanle.service.TableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -28,8 +29,8 @@ public class TableController {
     @Autowired
     private TableService tableService;
 
-    @GetMapping("/getByCondition")
-    public RespBean<List<Table>> getTables(@RequestBody TableQueryReq req){
+    @PostMapping("/getByCondition")
+    public RespBean<TableQueryResp> getTables(@RequestBody TableQueryReq req){
         return RespBean.ok(tableService.getTables(req));
     }
 

@@ -9,6 +9,7 @@ import com.fanle.enums.BusinessExceptionEnum;
 import com.fanle.exception.BusinessException;
 import com.fanle.req.rest.RestaurantQueryReq;
 import com.fanle.req.rest.RestaurantSaveReq;
+import com.fanle.resp.rest.RestaurantQueryResp;
 import com.fanle.service.RestaurantService;
 import com.fanle.mapper.RestaurantMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,14 +30,21 @@ public class RestaurantServiceImpl extends ServiceImpl<RestaurantMapper, Restaur
     private RestaurantMapper restaurantMapper;
 
     @Override
-    public List<Restaurant> getRestaurants(RestaurantQueryReq req) {
+    public RestaurantQueryResp getRestaurants(RestaurantQueryReq req) {
         Integer start = null;
         Integer pageNum = req.getPageNum();
         Integer pageSize = req.getPageSize();
         if (ObjectUtil.isNotNull(pageNum) && ObjectUtil.isNotNull(pageSize)){
             start = (pageNum - 1) * pageSize;
         }
-        return restaurantMapper.selectListByCondition(req, start, pageSize);
+        List<Restaurant> restaurants = restaurantMapper.selectListByCondition(req, start, pageSize);
+        int total = restaurantMapper.selectCountByCondition(req);
+        RestaurantQueryResp resp = new RestaurantQueryResp();
+        resp.setRestaurants(restaurants);
+        resp.setPageNum(pageNum);
+        resp.setPageSize(pageSize);
+        resp.setTotal(total);
+        return resp;
     }
 
     @Override

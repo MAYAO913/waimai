@@ -9,6 +9,7 @@ import com.fanle.enums.BusinessExceptionEnum;
 import com.fanle.exception.BusinessException;
 import com.fanle.req.dish.DishQueryReq;
 import com.fanle.req.dish.DishSaveReq;
+import com.fanle.resp.dish.DishQueryResp;
 import com.fanle.service.DishService;
 import com.fanle.mapper.DishMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,14 +30,21 @@ public class DishServiceImpl extends ServiceImpl<DishMapper, Dish>
     private DishMapper dishMapper;
 
     @Override
-    public List<Dish> getDishes(DishQueryReq req) {
+    public DishQueryResp getDishes(DishQueryReq req) {
         Integer start = null;
         Integer pageNum = req.getPageNum();
         Integer pageSize = req.getPageSize();
         if (ObjectUtil.isNotNull(pageNum) && ObjectUtil.isNotNull(pageSize)){
             start = (pageNum - 1) * pageSize;
         }
-        return dishMapper.selectListByCondition(req, start, pageSize);
+        List<Dish> dishes = dishMapper.selectListByCondition(req, start, pageSize);
+        int total = dishMapper.selectCountByCondition(req);
+        DishQueryResp resp = new DishQueryResp();
+        resp.setDishes(dishes);
+        resp.setPageNum(pageNum);
+        resp.setPageSize(pageSize);
+        resp.setTotal(total);
+        return resp;
     }
 
     @Override
