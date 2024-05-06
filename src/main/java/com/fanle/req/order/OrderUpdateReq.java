@@ -1,7 +1,5 @@
 package com.fanle.req.order;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
@@ -12,40 +10,36 @@ import java.util.Date;
  * @author: mafanle
  */
 @Data
-public class OrderSaveReq {
+public class OrderUpdateReq {
     /**
      * 订单编号
      */
+    @NotNull(message = "【id】不能为空")
     private Integer id;
 
     /**
      * 用户编号
      */
-    @NotNull(message = "【userId】不能为空")
     private Integer userId;
 
     /**
      * 餐厅编号
      */
-    @NotNull(message = "【restaurantId】不能为空")
     private Integer restaurantId;
 
     /**
      * 桌号
      */
-    @NotNull(message = "【tableId】不能为空")
     private Integer tableId;
 
     /**
      * 菜品编号
      */
-    @NotNull(message = "【dishId】不能为空")
     private Integer dishId;
 
     /**
      * 数量
      */
-    @NotNull(message = "【quantity】不能为空")
     private Integer quantity;
 
     /**

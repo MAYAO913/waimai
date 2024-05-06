@@ -22,7 +22,9 @@ public interface OrderMapper extends BaseMapper<Order> {
                                         @Param("start") Integer start,
                                         @Param("pageSize") Integer pageSize);
 
-    List<OrderQueryResp> findOrdersByIds(OrderQueryReq req);
+    List<OrderQueryResp> findOrdersByIds(@Param("req") OrderQueryReq req,
+                                        @Param("start") Integer start,
+                                        @Param("pageSize") Integer pageSize);
 }
 
 

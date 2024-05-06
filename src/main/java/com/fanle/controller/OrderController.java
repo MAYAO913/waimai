@@ -3,6 +3,7 @@ package com.fanle.controller;
 import com.fanle.entity.Order;
 import com.fanle.req.order.OrderQueryReq;
 import com.fanle.req.order.OrderSaveReq;
+import com.fanle.req.order.OrderUpdateReq;
 import com.fanle.resp.RespBean;
 import com.fanle.resp.order.OrderQueryResp;
 import com.fanle.service.OrderService;
@@ -42,7 +43,7 @@ public class OrderController {
     }
 
     @PutMapping("/update")
-    public RespBean updateOrderById(@RequestBody OrderSaveReq req){
+    public RespBean updateOrderById(@RequestBody OrderUpdateReq req){
         return RespBean.ok(orderService.updateOrderById(req));
     }
 

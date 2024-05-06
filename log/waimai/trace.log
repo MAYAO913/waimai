@@ -73,3 +73,33 @@
 2024-05-06 16:25:54.526 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
 2024-05-06 16:25:54.693 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c0f93c5
 2024-05-06 16:25:54.694 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-05-06 16:48:26.968 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
+2024-05-06 16:48:26.983 INFO  com.fanle.WaimaiApplication                       :50   [32m                  [0;39m Starting WaimaiApplication using Java 21 with PID 92506 (/Users/mayao/Documents/codes/back-codes/waimai/target/classes started by mayao in /Users/mayao/Documents/codes/back-codes/waimai)
+2024-05-06 16:48:26.983 INFO  com.fanle.WaimaiApplication                       :653  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-05-06 16:48:27.006 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-06 16:48:27.006 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :252  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-06 16:48:27.475 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port 8080 (http)
+2024-05-06 16:48:27.479 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-06 16:48:27.480 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-05-06 16:48:27.480 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-05-06 16:48:27.496 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-05-06 16:48:27.497 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :296  [32m                  [0;39m Root WebApplicationContext: initialization completed in 490 ms
+2024-05-06 16:48:27.920 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-05-06 16:48:27.934 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-05-06 16:48:27.944 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :221  [32m                  [0;39m Tomcat started on port 8080 (http) with context path ''
+2024-05-06 16:48:27.949 INFO  com.fanle.WaimaiApplication                       :56   [32m                  [0;39m Started WaimaiApplication in 1.192 seconds (process running for 1.485)
+2024-05-06 16:48:34.708 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-06 16:48:34.709 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-05-06 16:48:34.711 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 2 ms
+2024-05-06 16:48:34.714 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/order/getByCondition
+2024-05-06 16:48:34.745 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-05-06 16:48:34.746 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-05-06 16:48:34.822 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-05-06 16:48:35.020 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6af64373
+2024-05-06 16:48:35.021 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-05-06 16:48:53.933 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/order/getByCondition
+2024-05-06 16:48:53.935 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-05-06 16:48:53.935 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效
+2024-05-06 16:49:26.023 INFO  com.fanle.filter.JwtFilter                        :29   [32m                  [0;39m 请求路径：/order/getByCondition
+2024-05-06 16:49:26.025 INFO  com.fanle.utils.JwtUtil                           :44   [32m                  [0;39m JWT token校验结果：true
+2024-05-06 16:49:26.026 INFO  com.fanle.filter.JwtFilter                        :58   [32m                  [0;39m token有效

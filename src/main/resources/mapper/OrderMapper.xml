@@ -59,9 +59,12 @@
                SUM(o.quantity * d.price) OVER() as total_price
         from `order` o
                  left JOIN dish d on o.restaurant_id = d.restaurant_id and o.dish_id = d.id
-        where o.user_id = #{userId}
-          and o.restaurant_id = #{restaurantId}
-          and o.table_id = #{tableId}
+        where o.user_id = #{req.userId}
+          and o.restaurant_id = #{req.restaurantId}
+          and o.table_id = #{req.tableId}
+        <if test="start != null and pageSize != null">
+            limit #{start}, #{pageSize}
+        </if>
     </select>
 
 

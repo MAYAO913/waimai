@@ -4,6 +4,7 @@ import com.fanle.entity.Order;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.fanle.req.order.OrderQueryReq;
 import com.fanle.req.order.OrderSaveReq;
+import com.fanle.req.order.OrderUpdateReq;
 import com.fanle.resp.order.OrderQueryResp;
 
 import java.util.List;
@@ -19,7 +20,7 @@ public interface OrderService extends IService<Order> {
 
     Integer insert(OrderSaveReq req);
 
-    Integer updateOrderById(OrderSaveReq req);
+    Integer updateOrderById(OrderUpdateReq req);
 
     Integer deleteOrderById(Integer id);
 }

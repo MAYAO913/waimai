@@ -54,7 +54,7 @@ public class Order implements Serializable {
     /**
      * 订单状态
      */
-    private Integer status;
+    private Boolean status;
 
     /**
      * 下单时间
