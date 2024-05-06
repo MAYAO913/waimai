@@ -55,6 +55,12 @@ public class User implements Serializable {
      */
     private String role;
 
+    /**
+     * 用户权限,在该项目中这个代表管理的餐厅id
+     */
+    private String permission;
+
+
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 }

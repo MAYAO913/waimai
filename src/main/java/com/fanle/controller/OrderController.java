@@ -30,7 +30,7 @@ public class OrderController {
     private OrderService orderService;
 
     // 查询
-    @GetMapping("/getByCondition")
+    @PostMapping("/getByCondition")
     public RespBean<List<OrderQueryResp>> getByCondition(@RequestBody OrderQueryReq req){
         return RespBean.ok(orderService.getByCondition(req));
     }

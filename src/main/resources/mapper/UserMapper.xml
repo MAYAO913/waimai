@@ -13,11 +13,13 @@
             <result property="firstname" column="firstname" jdbcType="VARCHAR"/>
             <result property="lastname" column="lastname" jdbcType="VARCHAR"/>
             <result property="role" column="role" jdbcType="VARCHAR"/>
+            <result property="permission" column="permission" jdbcType="VARCHAR"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,username,password,
+        id
+        ,username,password,
         phone,email,firstname,
-        lastname,role
+        lastname,role,permission
     </sql>
 </mapper>

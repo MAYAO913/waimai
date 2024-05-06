@@ -22,6 +22,22 @@
         price,status,order_time
     </sql>
 
+    <resultMap id="orderList" type="com.fanle.resp.order.OrderQueryResp">
+        <id property="id" column="id" />
+        <result property="tableId" column="table_id"/>
+        <result property="restaurantId" column="restaurant_id"/>
+        <result property="totalPrice" column="total_price"/>
+        <result property="status" column="status"/>
+        <result property="orderTime" column="order_time"/>
+        <collection property="dishes" ofType="com.fanle.resp.order.DishResp" javaType="list">
+            <id property="dishId" column="dish_id"/>
+            <result property="name" column="name"/>
+            <result property="quantity" column="quantity"/>
+        </collection>
+    </resultMap>
+
+
+
     <select id="getByCondition" resultType="com.fanle.resp.order.OrderQueryResp">
         SELECT d.`name`, d.description, o.quantity, o.price, o.`status`
         from `order` o
@@ -30,4 +46,23 @@
           and o.restaurant_id = #{req.restaurantId}
           and o.table_id = #{req.tableId}
     </select>
+
+    <select id="findOrdersByIds" resultMap="orderList">
+        SELECT o.id,
+               o.table_id,
+               o.restaurant_id,
+               d.id as                   dish_id,
+               d.`name`,
+               o.quantity,
+               o.`status`,
+               o.order_time,
+               SUM(o.quantity * d.price) OVER() as total_price
+        from `order` o
+                 left JOIN dish d on o.restaurant_id = d.restaurant_id and o.dish_id = d.id
+        where o.user_id = #{userId}
+          and o.restaurant_id = #{restaurantId}
+          and o.table_id = #{tableId}
+    </select>
+
+
 </mapper>

@@ -35,8 +35,9 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order>
         if (ObjectUtil.isNotNull(pageNum) && ObjectUtil.isNotNull(pageSize)){
             start = (pageNum - 1) * pageSize;
         }
+        List<OrderQueryResp> orderList = orderMapper.findOrdersByIds(req);
 
-        return orderMapper.getByCondition(req, start, pageSize);
+        return orderList;
     }
 
     @Override

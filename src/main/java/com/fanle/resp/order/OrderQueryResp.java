@@ -1,7 +1,13 @@
 package com.fanle.resp.order;
 
 import com.fanle.entity.Dish;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import jakarta.validation.constraints.Pattern;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 import java.util.Date;
 import java.util.List;
@@ -11,17 +17,24 @@ import java.util.List;
  * @author: mafanle
  */
 @Data
+@Builder
+@Accessors(chain = true)
+@NoArgsConstructor
+@AllArgsConstructor
 public class OrderQueryResp {
 
-    private String name;
+    private Integer id;
 
-    private String description;
+    private Integer tableId;
 
-    private Integer quantity;
+    private Integer restaurantId;
 
-    private Integer price;
+    private List<DishResp> dishes;
 
-    private Integer status;
+    private Integer totalPrice;
 
+    private Boolean status;
 
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date orderTime;
 }

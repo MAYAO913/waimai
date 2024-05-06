@@ -21,6 +21,8 @@ public interface OrderMapper extends BaseMapper<Order> {
     List<OrderQueryResp> getByCondition(@Param("req") OrderQueryReq req,
                                         @Param("start") Integer start,
                                         @Param("pageSize") Integer pageSize);
+
+    List<OrderQueryResp> findOrdersByIds(OrderQueryReq req);
 }
 
 
